@@ -1,0 +1,382 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.hero{
+    height: 120vh;
+    width: 100%;
+    background-position: center;
+    background-image: url(/images/open.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+nav{
+    display:flex;
+    background-color: rgb(27, 27, 27);
+    width: 100%;
+    position: fixed;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 2px 14px;
+}
+nav li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 13px;
+    font-weight: lighter;
+   cursor: pointer;
+}
+#submenu{
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+    visibility: hidden;
+    z-index: 1;
+}
+li:hover ul#submenu{
+    opacity: 1;
+    top: 42px;
+    visibility: visible;
+    background-color: rgb(27, 27, 27);
+    width: 100%;
+    transition: 0.25s ease;
+    display: flex;
+}
+li:hover ul#submenu .cont {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+li:hover ul#submenu .c1{
+    padding-left: 18%;
+    padding-right: 5%;
+    list-style-type: none;
+}
+
+li:hover ul#submenu .c1 a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 800;
+}
+li:hover ul#submenu .head{
+    color: grey;   
+    padding-top: 50px;
+}
+li:hover ul#submenu .c2,.c3{
+    padding-right: 1%;
+    font-weight: 300;
+}
+
+.first-page{
+    width: 100%;
+    height: 88vh;
+    background-image: url(images/pic2.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+    text-align: center;
+}
+.second-page, .third-page{
+    width: 100%;
+    height: 92vh;
+    padding-top: 50px;
+    text-align: center;
+    background-image: url(images/pic3.jpg);
+    background-position: center;
+    background-size: cover;
+    border-top: 13px solid white;
+}
+.third-page{
+    background-image: url(images/pic4.jpg);
+    border-bottom: 13px solid white;
+}
+.first-page h1, .second-page h1, .third-page h1, .begin-page h1{
+    font-size: 60px;
+    color: white;
+}
+.second-page h1, .third-page h1{
+    color: black;
+
+}
+.first-page h2, .second-page h2, .third-page h2, .begin-page h2{
+    color: white;
+    font-weight: 100;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.second-page h2, .third-page h2{
+    color: black;
+}
+.begin-page .btn-class :nth-child(1), .first-page .btn-class :nth-child(1), .second-page .btn-class :nth-child(1), .third-page .btn-class :nth-child(1) {
+    cursor: pointer;
+    border: none;
+    margin-right: 10px;
+    width: 130px;
+    height: 43px;
+    border-radius: 40px;
+    color: white;
+    font-size: 17px;
+    background-color: rgb(49, 115, 247);
+}
+.begin-page .btn-class :nth-child(1){
+    background-color: white;
+    color: black;
+}
+ .fourth-page button,  .fifth-page button, .sixth-page button{
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: rgb(49, 115, 247);
+    width: 110px;
+    height: 37px;
+    border-radius: 40px;
+    font-size: 15px;
+}
+.begin-page .btn-class :nth-child(2){
+    border: 1px solid white;
+    height: 43px;
+    width: 70px;
+    border-radius: 40px;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+}
+.begin-page{
+    padding-top: 600px;
+}
+.first-page .btn-class :nth-child(2), .second-page .btn-class :nth-child(2), .third-page .btn-class :nth-child(2){
+    cursor: pointer;
+    border: 1px solid rgb(49, 115, 247);
+    height: 43px;
+    width: 70px;
+    background-color: black;
+    border-radius: 40px;
+    color: rgb(49, 115, 247);
+    font-size: 17px;
+}
+.fourth-page button:nth-child(2), .fifth-page button:nth-child(2){
+    cursor: pointer;
+    border: 1px solid rgb(49, 115, 247);
+    height: 37px;
+    width: 65px;
+    color: rgb(49, 115, 247);
+    margin-left: 12px;
+    background: none;
+}
+.second-page .btn-class :nth-child(2), .third-page .btn-class :nth-child(2), .fourth-page button:nth-child(2), .sixth-page button:nth-child(2){    
+    background: none;
+}  
+.sixth-page button:nth-child(2){
+    border: 1px solid rgb(49, 115, 247);
+    color: rgb(49, 115, 247);
+    
+}
+.fourth-page, .fifth-page, .sixth-page{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    border-bottom: 13px solid white;
+} 
+.fourth-page .left, .fifth-page .left, .sixth-page .left{
+    border-right: 13px solid white;
+
+}
+.fourth-page .left, .right, .fifth-page .left, .right, .sixth-page .left, .right{
+    width: 50%;
+}
+.fourth-page .left h2, .right h2, .fifth-page .left .description h2, .fifth-page .right .description h2, .sixth-page .left .description h2, .sixth-page .right .description h2{
+    font-size: 25px;
+    font-weight: 200;
+}    
+.fourth-page .left .description h2, .fifth-page .left .description h2{
+    color: white;
+}
+.fourth-page .right .description h1, .fifth-page .right .description h1, .sixth-page .right .description h1, .sixth-page .left .description h1{
+    font-size: 40px;
+    font-weight: 550;
+}
+.fourth-page .left{
+    background-image: url(images/pic6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.fourth-page .right{
+    background-image: url(images/pic5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.fourth-page .description{
+    text-align: center;
+    padding-top: 400px;
+}
+.fifth-page .description, .sixth-page .description{
+    text-align: center;
+    padding-top: 32px;
+}
+.fifth-page .left{
+    background-image: url(images/pic8.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.fifth-page .right{
+    background-image: url(images/pic7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.sixth-page .right{
+    background-image: url(images/pic9.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.sixth-page .left{
+    background-image: url(images/pic10.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.fifth-page .left .description h1{
+    color: white;
+    font-weight: 900;
+}
+.fifth-page .left .description h3{
+    color: rgb(228, 5, 5);
+    font-size: smaller;
+    font-weight: 300;
+}
+.sixth-page .right button{
+    width: 150px;
+}
+.swiper {
+    width: 100%;
+    height: 85vh;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .swiper-slide img {
+    display: block;
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.swiper-pagination{
+    background-color: white;
+    margin-bottom: -0.5em;
+}
+.swiper-scrollbar{
+    display: none;
+}
+:root{
+    --swiper-theme-color:rgb(125, 124, 124);
+}
+.eight-page{
+    height: 10vh;
+    margin-top: 3em;
+    margin-bottom: 13.5em;
+}
+.scroller{
+    width: 100%;
+}
+.scroller_inner{
+    display: flex;
+    gap: 27px;
+    height: 30vh;
+}
+.scroller[data-animated=true]{
+    overflow: hidden;
+}
+.scroller[data-animated=true] .scroller_inner{
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll 45s linear infinite;
+}
+@keyframes scroll{
+    to{
+        transform: translate(-50%);
+    }
+}
+ .imgbox1, .imgbox2{
+    background-color: rgb(201, 49, 74);
+    height: 30vh;
+    padding-right: 230px;
+}
+.imgbox2{
+    background: rgb(62, 16, 62);
+}
+.imgbox2 img, .imgbox1 img{
+    width: 220px;
+    padding-top: 20px;
+    padding-left: 18px;
+    border-radius: 40px;
+}
+.ninth-page{
+    height: 140vh;
+    width: 100%;
+    background-color: rgb(241, 239, 239);
+    padding: 14px 270px ; 
+}
+.part1, .part3{
+    border-bottom: 1px solid gray;
+    
+}
+.part1 p, .part3 p, .part4 p{
+    color: gray;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.part4{
+    width: 100%;
+    display: flex;
+    margin-top: 13px;
+}
+.part4 .bit1 p{
+    padding-right: 37px;
+}
+.part4 .bit2{
+    display: flex;
+    width: 45%;
+    justify-content: space-evenly;
+}
+
+.bit2 p:nth-child(4), .bit2 p:nth-child(2){
+    padding: 0 8px;
+    border-left:  1px solid gray;
+    border-right: 1px solid gray;
+}
+.bit3{
+    margin-left:145px;
+}
+.part2{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 3em;
+}
+.part2 .head{
+    color: black;
+    margin-top: 1.5em;
+}
+.part2 p{
+    margin-top: 10px;
+    color: gray;
+}
